@@ -1,0 +1,107 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "karla";
+    src: url("Karla/Karla-VariableFont_wght.ttf");
+}
+:root{
+    --radius: 10px;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+p, h1, h2, h3{
+   font-family: "karla";
+}
+p{
+    font-size: 16px;
+}
+.main{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px auto;
+}
+.main > div{
+    padding: 35px;
+}
+.min-main1{
+    grid-column: 1 / span 2;
+    background-color: white;
+    border-top-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+
+}
+h2{
+    color: hsl(179, 62%, 43%);
+}
+.green{
+    color: hsl(71, 73%, 54%);
+}
+.top{
+    line-height: 1.5;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+}
+.min-main2{
+    color: rgba(255, 255, 255, 0.938);
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: var(--radius);
+}
+.dollar{
+    display: flex;
+    align-items: center;
+}
+h1{
+    margin: 2px 0;
+}
+.month{
+    margin-top: 0;
+}
+.dol-light{
+    padding-left: 14px;
+    word-spacing: 3px;
+    color: rgba(255, 255, 255, 0.616);
+}
+button{
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  font-family: "karla";
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+button:hover{
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.min-main3{
+    background-color: hsla(179, 62%, 43%, 0.795);
+    color: rgb(255, 255, 255);
+    border-bottom-right-radius: var(--radius);
+
+}
+.list{
+    margin: 4px 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.836);
+}
+@media (max-width: 540px) {
+    .main{
+        display: block;
+        margin: 30px 10px;
+    }
+    .min-main2{
+        border-radius: 0;
+    }
+    .min-main3{
+    border-bottom-left-radius: var(--radius);
+    }
+}
